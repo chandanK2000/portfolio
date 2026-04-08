@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan Kumar | MERN Developer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Chandan Kumar</h1>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+    </header>
+
+    <!-- MOBILE NAV -->
+
+    <div class="mobile-nav" id="mobileMenu">
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#skills" onclick="closeMenu()">Skills</a>
+    <a href="#experience" onclick="closeMenu()">Experience</a>
+    <a href="#education" onclick="closeMenu()">Education</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+
+    <hr>
+
+    <a href="https://github.com/chandanK2000" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://linkedin.com/in/your-link" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+</div>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="./chandanimage1.jpeg">
+        <h2>Hi, I'm Chandan Kumar</h2>
+        <p>MERN Stack Developer | 2+ Years Experience</p>
+        <p class="role-text">
+            <span id="role"></span>
+        </p>
+        <div>
+            <a href="#contact" class="btn">Hire Me</a>
+            <a href="./resume.pdf" target="_blank" class="btn secondary">
+                View Resume
+            </a>
+
+            <a href="#" onclick="downloadResume()" class="btn">
+                Download Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="fade bg-light">
+        <div class="icon-title"><i class="fas fa-user"></i>
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <p class="list">
+            MERN Stack Developer with 2+ years of experience building scalable, secure, and responsive web applications.
+            <br><br>
+            Experienced in enterprise applications, dashboards, JWT authentication, and payment integrations like
+            Razorpay.
+            <br><br>
+            Focused on clean code, performance, and modern UI development with testing best practices.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="fade">
+        <div class="icon-title"><i class="fas fa-code"></i>
+            <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Frontend</h3>
+                <p>React.js, Next.js, Redux, Tailwind, Bootstrap</p>
+            </div>
+            <div class="card">
+                <h3>Backend</h3>
+                <p>Node.js, Express.js, Flask, REST APIs</p>
+            </div>
+            <div class="card">
+                <h3>Database</h3>
+                <p>MongoDB, MSSQL, MySQL</p>
+            </div>
+            <div class="card">
+                <h3>Tools</h3>
+                <p>Git, GitHub, AWS, Postman, Razorpay</p>
+            </div>
+            <div class="card">
+                <h3>Testing</h3>
+                <p>Jest, React Testing Library</p>
+            </div>
+            <div class="card">
+                <h3>Concepts</h3>
+                <p>Authentication, Authorization, API Integration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="fade bg-light">
+        <div class="icon-title">
+            <i class="fas fa-briefcase"></i>
+            <h2 class="section-title">Experience</h2>
+        </div>
+
+        <div class="grid">
+
+            <!-- Datanoveltech -->
+            <div class="card">
+                <h3>Software Engineer – Datanoveltech</h3>
+                <p><strong>Jan 2025 – Present</strong></p>
+
+                <p>
+                    Working on enterprise-level applications including Hardware Parts Management and Warehouse Systems.
+                    Developed responsive dashboards, role-based access control, and secure authentication using JWT.
+                </p>
+
+                <p>
+                    Built modules like Production Plan, Item Master, Reporting, and Admin Panels with search, filtering,
+                    and data management features.
+                </p>
+
+                <p>
+                    <strong>Tech:</strong> React.js, Bootstrap, Flask, MS SQL, JWT
+                </p>
+            </div>
+
+            <!-- Payrup -->
+            <div class="card">
+                <h3>React Developer – Payrup</h3>
+                <p><strong>Aug 2022 – Jun 2023</strong></p>
+
+                <p>
+                    Developed reusable UI components based on Figma designs using React.js and Material UI.
+                    Focused on building responsive layouts and improving user experience.
+                </p>
+
+                <p>
+                    Assisted in API integration (CRUD operations) and module-level testing to ensure smooth
+                    functionality.
+                </p>
+
+                <p>
+                    <strong>Tech:</strong> React.js, Material UI, REST APIs, CSS
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="fade">
+        <div class="icon-title">
+            <i class="fas fa-graduation-cap"></i>
+            <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>MCA – Jain University</h3>
+                <p>2024 | Karnataka</p>
+                <p>Master of Computer Applications with focus on software development and modern technologies.</p>
+            </div>
+
+            <div class="card">
+                <h3>BCA – SNS College (BRABU)</h3>
+                <p>2020 | Bihar</p>
+                <p>Bachelor of Computer Applications with strong foundation in programming and databases.</p>
+            </div>
+
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>2017 | Bihar Board</p>
+                <p>Completed higher secondary education with core academic subjects.</p>
+            </div>
+
+            <div class="card">
+                <h3>10th (Matriculation)</h3>
+                <p>2015 | Bihar Board</p>
+                <p>Completed schooling with focus on fundamentals and discipline.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade">
+        <div class="icon-title">
+            <i class="fas fa-laptop-code"></i>
+            <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="grid">
+
+            <!-- Project 1 -->
+            <div class="card">
+                <h3>Hardware Parts Management System</h3>
+                <p>
+                    Developed a full-featured enterprise application for managing hardware production and parts
+                    tracking.
+                    Implemented JWT authentication, role-based dashboards, and modules like Production Plan, Item
+                    Master,
+                    and Serialized Issue.
+                </p>
+                <p>
+                    <strong>Tech:</strong> React.js, Bootstrap, Flask, MS SQL, JWT
+                </p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card">
+                <h3>Warehouse Management System</h3>
+                <p>
+                    Built a scalable warehouse system with admin panel and AI-based features like Face Recognition,
+                    Vehicle OCR, and Crowd Counting. Included search, filtering, pagination, and real-time monitoring.
+                </p>
+                <p>
+                    <strong>Tech:</strong> React.js, Node.js, MongoDB, Razorpay, SMS APIs
+                </p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card">
+                <h3>Datanoveltech Company Website</h3>
+                <p>
+                    Developed complete frontend from scratch and integrated with Flask backend.
+                    Implemented login/registration, JWT authentication, session handling, and responsive UI.
+                </p>
+                <p>
+                    <strong>Tech:</strong> React.js, Flask, MS SQL, JWT, CSS
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+  <section id="contact" class="fade bg-light contact">
+    <div class="icon-title">
+        <i class="fas fa-envelope"></i>
+        <h2 class="section-title">Contact</h2>
+    </div>
+
+    <p>
+        <i class="fas fa-envelope"></i> 
+        <a href="mailto:ck933970@gmail.com">ck933970@gmail.com</a>
+    </p>
+
+    <p>
+        <i class="fas fa-phone"></i> 
+        <a href="tel:6360487464">6360487464</a>
+    </p>
+
+    <p>
+        <i class="fab fa-github"></i> 
+        <a href="https://github.com/chandanK2000/" target="_blank">
+            github.com/chandanK2000
+        </a>
+    </p>
+
+    <p>
+        <i class="fab fa-linkedin"></i> 
+        <a href="https://www.linkedin.com/in/your-link/" target="_blank">
+            linkedin.com/in/your-link
+        </a>
+    </p>
+</section>
+
+    <footer>
+        <p>© 2026 Chandan Kumar | MERN Developer</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
